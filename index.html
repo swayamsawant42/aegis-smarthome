@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexura Home | Intelligent Wi-Fi Smart Home Automation</title>
+  <meta name="description" content="Generic, universal Wi-Fi enabled smart home appliances. Smart video bells, whisper-silent BLDC fans, inverter climate ACs, and tunable ambient lighting.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon / Vector Logo -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300f0ff'><path d='M12 2L2 9.5V22h20V9.5L12 2zm0 4.5l6 4.5v9h-3v-5h-6v5H5v-9l7-4.5z'/></svg>">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#" class="brand-logo" aria-label="Nexura Home Homepage">
+        <div class="brand-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 10l10 8 10-8-10-8z"/>
+            <path d="M2 14l10 8 10-8"/>
+          </svg>
+        </div>
+        <span class="brand-text">NEXURA<span>.IOT</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#simulator" class="nav-link">Live Simulator</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#calculator" class="nav-link">Energy Savings</a></li>
+          <li><a href="#architecture" class="nav-link">Technology</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <span id="theme-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+            </svg>
+          </span>
+        </button>
+        <a href="#simulator" class="btn-primary" style="padding: 0.6rem 1.25rem;">Try Demo</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION
+       ========================================================================= -->
+  <section class="section hero-section">
+    <div class="hero-glow-blob"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+          </svg>
+          Wi-Fi 6 & Matter Standard
+        </div>
+        <h1>Intelligent Living, <br><span class="gradient-text">Effortlessly Connected.</span></h1>
+        <p class="hero-description">
+          Generic, universal smart home hardware engineered for seamless ambient automation. Wi-Fi doorbells, whisper-silent BLDC fans, adaptive inverter AC controls, and vibrant atmospheric lighting—zero proprietary bridges required.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#simulator" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            Experience Live Simulator
+          </a>
+          <a href="#products" class="btn-secondary">Explore Generic Lineup</a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Direct Wi-Fi (No Hubs)
+          </div>
+          <div class="highlight-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Matter & HomeKit Ready
+          </div>
+          <div class="highlight-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Local-First Encrypted
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Interactive Mini-Hub Card -->
+      <div class="hero-hub-card">
+        <div class="hub-card-header">
+          <div>
+            <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 0.05em;">Home Dashboard</div>
+            <div style="font-size: 1.2rem; font-weight: 800;">Main Living Room</div>
+          </div>
+          <div class="hub-status">
+            <span class="status-dot"></span>
+            <span>4 Devices Online</span>
+          </div>
+        </div>
+
+        <div class="hero-hub-grid">
+          <!-- Light Quick Widget -->
+          <div class="quick-control-widget">
+            <div class="qcw-header">
+              <div class="qcw-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18h6"></path><path d="M10 22h4"></path>
+                  <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+                </svg>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="hero-light-toggle" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <div class="qcw-title">Smart Light</div>
+            <div class="qcw-value" id="hero-light-status">85%</div>
+          </div>
+
+          <!-- Fan Quick Widget -->
+          <div class="quick-control-widget">
+            <div class="qcw-header">
+              <div class="qcw-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 12c0-3 2.5-5.5 5.5-5.5S23 9 23 12s-2.5 5.5-5.5 5.5-5.5-2.5-5.5-5.5z"></path>
+                  <path d="M12 12c-3 0-5.5 2.5-5.5 5.5S9 23 12 23s5.5-2.5 5.5-5.5-2.5-5.5-5.5-5.5z"></path>
+                  <path d="M12 12c0 3-2.5 5.5-5.5 5.5S1 15 1 12s2.5-5.5 5.5-5.5 5.5 2.5 5.5 5.5z"></path>
+                  <path d="M12 12c3 0 5.5-2.5 5.5-5.5S15 1 12 1 6.5 3.5 6.5 6.5 9 12 12 12z"></path>
+                </svg>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="hero-fan-toggle" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <div class="qcw-title">Aero Fan</div>
+            <div class="qcw-value" id="hero-fan-status">Speed 2</div>
+          </div>
+
+          <!-- AC Quick Widget -->
+          <div class="quick-control-widget">
+            <div class="qcw-header">
+              <div class="qcw-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
+                </svg>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="hero-ac-toggle" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <div class="qcw-title">Inverter AC</div>
+            <div class="qcw-value" id="hero-ac-temp">72°F</div>
+          </div>
+
+          <!-- Bell Quick Widget -->
+          <div class="quick-control-widget">
+            <div class="qcw-header">
+              <div class="qcw-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+              </div>
+              <span style="font-size: 0.75rem; color: var(--accent-emerald); font-weight: 700;">ACTIVE</span>
+            </div>
+            <div class="qcw-title">HaloBell Pro</div>
+            <div class="qcw-value">Standby</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       TRUST & ECOSYSTEM COMPATIBILITY STRIP
+       ========================================================================= -->
+  <section class="trust-bar">
+    <div class="container trust-flex">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline>
+        </svg>
+        <span>Matter 1.3 Certified</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>
+        </svg>
+        <span>Apple Home & Siri</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle><path d="M3 9a9 9 0 0 1 9-9 9 9 0 0 1 9 9"></path>
+        </svg>
+        <span>Google Home Assistant</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+        <span>Amazon Alexa Built-in</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line>
+        </svg>
+        <span>Home Assistant Open API</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       INTERACTIVE SMART HOME SIMULATOR
+       ========================================================================= -->
+  <section class="section simulator-section" id="simulator">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge-tag">Interactive Sandbox</div>
+        <h2 class="section-title">The Nexura Living Room Experience</h2>
+        <p class="section-subtitle">
+          Test real-time IoT controls directly in your browser. Adjust fan aerodynamics, shift atmospheric lighting, tweak inverter temperatures, or ring the smart video doorbell.
+        </p>
+      </div>
+
+      <div class="sim-room-container">
+        <div class="sim-room-backdrop" id="sim-room-backdrop"></div>
+
+        <div class="sim-header">
+          <div>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Room Atmosphere:</span>
+            <span style="font-size: 1.1rem; font-weight: 800; margin-left: 0.5rem;">Connected Suite Alpha</span>
+          </div>
+          <div class="sim-live-badge">
+            <span class="status-dot"></span>
+            <span>Real-time WebSocket Simulator</span>
+          </div>
+        </div>
+
+        <div class="sim-device-grid">
+          <!-- 1. SMART DOORBELL -->
+          <div class="sim-card">
+            <div class="sim-card-top">
+              <div>
+                <div class="sim-device-name">HaloBell Pro</div>
+                <div class="sim-device-type">Front Doorbell</div>
+              </div>
+              <div class="sim-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Cam Viewport -->
+            <div class="sim-device-visual">
+              <div class="doorbell-cam-feed">
+                <div class="cam-rec-indicator">
+                  <span class="rec-dot"></span>
+                  <span id="cam-status-text">LIVE 2K HDR (60 FPS)</span>
+                </div>
+                <div class="cam-motion-alert" id="cam-motion-alert">Motion Detected: Porch</div>
+                <!-- Simulated Porch Graphic -->
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <div class="sim-controls">
+              <button class="btn-ring-bell" id="ring-bell-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                </svg>
+                Ring Doorbell Chime
+              </button>
+              <div class="control-btn-group" style="justify-content: space-between; margin-top: 0.25rem;">
+                <span style="font-size: 0.8rem; color: var(--text-muted);">2-Way Audio</span>
+                <button id="toggle-mic-btn" class="sim-btn-round" style="width: auto; padding: 0.2rem 0.8rem; border-radius: var(--radius-full); font-size: 0.75rem;">
+                  Talk
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. SMART BLDC FAN -->
+          <div class="sim-card">
+            <div class="sim-card-top">
+              <div>
+                <div class="sim-device-name">AeroFlow Ultra</div>
+                <div class="sim-device-type">Ceiling Fan</div>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="fan-power-toggle" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <!-- Fan Visual -->
+            <div class="sim-device-visual">
+              <div class="fan-visual-box">
+                <div class="fan-hub"></div>
+                <div class="fan-blades" id="fan-blades">
+                  <div class="fan-blade"></div>
+                  <div class="fan-blade"></div>
+                  <div class="fan-blade"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-controls">
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem;">
+                <span style="color: var(--text-muted);">Speed Level</span>
+                <span style="font-weight: 700; color: var(--accent-cyan);" id="fan-rpm-display">130 RPM</span>
+              </div>
+              <div class="speed-chips">
+                <button class="speed-chip fan-speed-chip" data-speed="1">1</button>
+                <button class="speed-chip fan-speed-chip active" data-speed="2">2</button>
+                <button class="speed-chip fan-speed-chip" data-speed="3">3</button>
+                <button class="speed-chip fan-speed-chip" data-speed="4">4</button>
+                <button class="speed-chip fan-speed-chip" data-speed="5">Turbo</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. SMART AC INVERTER -->
+          <div class="sim-card">
+            <div class="sim-card-top">
+              <div>
+                <div class="sim-device-name">FrostSense</div>
+                <div class="sim-device-type">Inverter Climate</div>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="ac-power-toggle" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <!-- AC Visual -->
+            <div class="sim-device-visual">
+              <div class="ac-temp-display">
+                <div class="ac-temp-value" id="ac-temp-value">72°</div>
+                <div class="ac-temp-unit">Target Temp (Fahrenheit)</div>
+                <div class="ac-cooling-animation" id="ac-cooling-animation">
+                  <span class="ac-wave-bar"></span>
+                  <span class="ac-wave-bar"></span>
+                  <span class="ac-wave-bar"></span>
+                  <span class="ac-wave-bar"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-controls">
+              <div class="control-btn-group" style="justify-content: space-between;">
+                <div style="display: flex; gap: 0.5rem;">
+                  <button class="sim-btn-round" id="ac-temp-down" title="Lower Temp">−</button>
+                  <button class="sim-btn-round" id="ac-temp-up" title="Raise Temp">+</button>
+                </div>
+                <div style="text-align: right;">
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">Current Draw:</span>
+                  <div style="font-size: 0.85rem; font-weight: 700; color: var(--accent-emerald);" id="ac-energy-draw">480 W</div>
+                </div>
+              </div>
+              <div class="speed-chips" style="margin-top: 0.25rem;">
+                <button class="speed-chip ac-mode-chip active" data-mode="cool">Cool</button>
+                <button class="speed-chip ac-mode-chip" data-mode="eco">Eco</button>
+                <button class="speed-chip ac-mode-chip" data-mode="turbo">Turbo</button>
+                <button class="speed-chip ac-mode-chip" data-mode="dry">Dry</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. SMART AMBIENT LIGHT -->
+          <div class="sim-card">
+            <div class="sim-card-top">
+              <div>
+                <div class="sim-device-name">LuminaGlow</div>
+                <div class="sim-device-type">RGB+CCT Mesh</div>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="light-power-toggle" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <!-- Light Visual -->
+            <div class="sim-device-visual">
+              <div class="light-bulb-glow" id="light-bulb-glow">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M9 18h6"></path><path d="M10 22h4"></path>
+                  <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="sim-controls">
+              <!-- Color Palette -->
+              <div class="color-palette-bar">
+                <span class="color-swatch light-color-swatch active" data-color="#00f0ff" style="background: #00f0ff;" title="Cyber Cyan"></span>
+                <span class="color-swatch light-color-swatch" data-color="#ff7e40" style="background: #ff7e40;" title="Sunset Warm"></span>
+                <span class="color-swatch light-color-swatch" data-color="#a855f7" style="background: #a855f7;" title="Midnight Violet"></span>
+                <span class="color-swatch light-color-swatch" data-color="#10b981" style="background: #10b981;" title="Zen Emerald"></span>
+                <span class="color-swatch light-color-swatch" data-color="#ffffff" style="background: #ffffff;" title="Pure Daylight"></span>
+              </div>
+              <!-- Brightness Slider -->
+              <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.2rem;">
+                  <span>Brightness</span>
+                  <span>10% - 100%</span>
+                </div>
+                <input type="range" class="range-slider" id="light-brightness-slider" min="15" max="100" value="85">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PRODUCT CATALOG SECTION
+       ========================================================================= -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge-tag">Generic Product Catalog</div>
+        <h2 class="section-title">Wi-Fi Connected Appliances</h2>
+        <p class="section-subtitle">
+          Versatile, white-label ready smart home devices built on open IoT standards. Engineered with high-efficiency hardware, robust RF radios, and zero brand-lock.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="product-filters">
+        <button class="filter-btn active" data-filter="all">All Products (6)</button>
+        <button class="filter-btn" data-filter="bell">Smart Bells</button>
+        <button class="filter-btn" data-filter="fan">Smart Fans</button>
+        <button class="filter-btn" data-filter="ac">Smart AC & Climate</button>
+        <button class="filter-btn" data-filter="light">Smart Lighting</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid">
+
+        <!-- 1. HaloBell Pro 2K -->
+        <div class="product-card" data-category="bell">
+          <span class="product-badge-corner">Security</span>
+          <div class="product-illustration">
+            <!-- Modern Doorbell SVG -->
+            <svg width="120" height="150" viewBox="0 0 100 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="25" y="10" width="50" height="120" rx="25" fill="#1e293b" stroke="#334155" stroke-width="3"/>
+              <circle cx="50" cy="40" r="14" fill="#0f172a" stroke="#00f0ff" stroke-width="2"/>
+              <circle cx="50" cy="40" r="6" fill="#00f0ff" opacity="0.8"/>
+              <circle cx="50" cy="98" r="16" fill="#0f172a" stroke="#00f0ff" stroke-width="2"/>
+              <path d="M50 92v12M44 98h12" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="50" cy="66" r="3" fill="#10b981"/>
+            </svg>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Smart Video Bell</span>
+            <span class="product-connectivity">● Wi-Fi 6 / 5GHz</span>
+          </div>
+          <h3 class="product-name">Nexura Bell Pro 2K</h3>
+          <p class="product-description">
+            Ultra-wide 160° HDR smart doorbell with AI edge human detection, low-latency 2-way talk, and both cloud & local MicroSD backup.
+          </p>
+          <div class="product-spec-pills">
+            <span class="spec-pill">2K QHD Video</span>
+            <span class="spec-pill">Color Night Vision</span>
+            <span class="spec-pill">IP65 Weatherproof</span>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-price-box">
+              <span class="price-label">MSRP</span>
+              <span class="price-value">$89.00</span>
+            </div>
+            <button class="btn-card-action open-spec-btn" data-product-id="bell-pro">Quick Specs</button>
+          </div>
+        </div>
+
+        <!-- 2. AeroFlow Ultra Ceiling Fan -->
+        <div class="product-card" data-category="fan">
+          <span class="product-badge-corner">Climate</span>
+          <div class="product-illustration">
+            <!-- Ceiling Fan SVG -->
+            <svg width="150" height="150" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="66" y="10" width="8" height="35" rx="3" fill="#64748b"/>
+              <circle cx="70" cy="55" r="20" fill="#1e293b" stroke="#00f0ff" stroke-width="2"/>
+              <path d="M70 55 L130 50 C130 50 120 70 70 60 Z" fill="#334155" stroke="#475569"/>
+              <path d="M70 55 L35 110 C35 110 20 95 70 55 Z" fill="#334155" stroke="#475569"/>
+              <path d="M70 55 L40 20 C40 20 60 15 70 55 Z" fill="#334155" stroke="#475569"/>
+              <circle cx="70" cy="55" r="10" fill="#00f0ff" opacity="0.8"/>
+            </svg>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Smart BLDC Fan</span>
+            <span class="product-connectivity">● Wi-Fi + BLE Mesh</span>
+          </div>
+          <h3 class="product-name">Nexura AeroFlow Ultra</h3>
+          <p class="product-description">
+            52-inch smart ceiling fan featuring a WhisperQuiet™ brushless DC motor, 10-speed nature flow, winter reverse circulation, and dimmable LED.
+          </p>
+          <div class="product-spec-pills">
+            <span class="spec-pill">&lt;22 dB Whisper</span>
+            <span class="spec-pill">75% Less Energy</span>
+            <span class="spec-pill">Matter Compatible</span>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-price-box">
+              <span class="price-label">MSRP</span>
+              <span class="price-value">$179.00</span>
+            </div>
+            <button class="btn-card-action open-spec-btn" data-product-id="fan-aeroflow">Quick Specs</button>
+          </div>
+        </div>
+
+        <!-- 3. FrostSense Inverter AC -->
+        <div class="product-card" data-category="ac">
+          <span class="product-badge-corner">Climate Hub</span>
+          <div class="product-illustration">
+            <!-- AC Unit SVG -->
+            <svg width="160" height="140" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="30" width="130" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+              <rect x="25" y="70" width="110" height="12" rx="4" fill="#0f172a" stroke="#00f0ff" stroke-width="1.5"/>
+              <circle cx="125" cy="50" r="6" fill="#00f0ff" opacity="0.9"/>
+              <text x="35" y="55" fill="#94a3b8" font-size="10" font-family="monospace">ECO INVERTER 72°</text>
+              <line x1="30" y1="95" x2="130" y2="95" stroke="#00f0ff" stroke-dasharray="4 4" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Smart AC Controller</span>
+            <span class="product-connectivity">● Dual-Band Wi-Fi</span>
+          </div>
+          <h3 class="product-name">FrostSense Inverter Hub</h3>
+          <p class="product-description">
+            Micro-climate environmental controller with laser PM2.5 tracking, auto-away geofencing, and AI predictive compressor throttling.
+          </p>
+          <div class="product-spec-pills">
+            <span class="spec-pill">SEER2 24.5</span>
+            <span class="spec-pill">Air Quality Sensor</span>
+            <span class="spec-pill">Dual Inverter</span>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-price-box">
+              <span class="price-label">MSRP</span>
+              <span class="price-value">$299.00</span>
+            </div>
+            <button class="btn-card-action open-spec-btn" data-product-id="ac-frostsense">Quick Specs</button>
+          </div>
+        </div>
+
+        <!-- 4. LuminaGlow RGB+CCT Light -->
+        <div class="product-card" data-category="light">
+          <span class="product-badge-corner">Lighting</span>
+          <div class="product-illustration">
+            <!-- Smart Bulb SVG -->
+            <svg width="130" height="150" viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="32" fill="#0f172a" stroke="#00f0ff" stroke-width="2"/>
+              <circle cx="50" cy="50" r="22" fill="#00f0ff" opacity="0.3"/>
+              <path d="M38 78 L62 78 L58 100 L42 100 Z" fill="#334155" stroke="#475569"/>
+              <line x1="42" y1="85" x2="58" y2="85" stroke="#94a3b8" stroke-width="2"/>
+              <line x1="44" y1="92" x2="56" y2="92" stroke="#94a3b8" stroke-width="2"/>
+              <rect x="46" y="100" width="8" height="6" rx="2" fill="#64748b"/>
+            </svg>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Smart RGB Bulb</span>
+            <span class="product-connectivity">● Wi-Fi + Thread</span>
+          </div>
+          <h3 class="product-name">Nexura LuminaGlow</h3>
+          <p class="product-description">
+            1200 Lumens peak brightness smart bulb with 16M colors, circadian rhythm sync, and real-time audio reactive music visualization.
+          </p>
+          <div class="product-spec-pills">
+            <span class="spec-pill">1200 Lumens</span>
+            <span class="spec-pill">CRI &gt; 93</span>
+            <span class="spec-pill">2200K - 6500K</span>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-price-box">
+              <span class="price-label">MSRP</span>
+              <span class="price-value">$24.00</span>
+            </div>
+            <button class="btn-card-action open-spec-btn" data-product-id="light-lumina">Quick Specs</button>
+          </div>
+        </div>
+
+        <!-- 5. BreezeTower Pro -->
+        <div class="product-card" data-category="fan">
+          <span class="product-badge-corner">Air Quality</span>
+          <div class="product-illustration">
+            <!-- Bladeless Tower SVG -->
+            <svg width="110" height="150" viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="25" y="10" width="30" height="90" rx="15" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+              <rect x="33" y="20" width="14" height="70" rx="7" fill="#0f172a" stroke="#00f0ff" stroke-width="1.5"/>
+              <circle cx="40" cy="115" r="18" fill="#1e293b" stroke="#00f0ff" stroke-width="2"/>
+              <circle cx="40" cy="115" r="4" fill="#10b981"/>
+            </svg>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Bladeless Fan & Purifier</span>
+            <span class="product-connectivity">● 2.4GHz Wi-Fi</span>
+          </div>
+          <h3 class="product-name">BreezeTower Pro</h3>
+          <p class="product-description">
+            Bladeless smart tower fan with integrated HEPA H13 filtration, 120° oscillating air multiplier, and ultra-quiet sleep algorithm.
+          </p>
+          <div class="product-spec-pills">
+            <span class="spec-pill">HEPA H13 Filter</span>
+            <span class="spec-pill">120° Wide Sweep</span>
+            <span class="spec-pill">Bladeless Safety</span>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-price-box">
+              <span class="price-label">MSRP</span>
+              <span class="price-value">$149.00</span>
+            </div>
+            <button class="btn-card-action open-spec-btn" data-product-id="fan-tower">Quick Specs</button>
+          </div>
+        </div>
+
+        <!-- 6. ChimeLink Multi-Room Hub -->
+        <div class="product-card" data-category="bell">
+          <span class="product-badge-corner">Accessory</span>
+          <div class="product-illustration">
+            <!-- Chime Plug SVG -->
+            <svg width="120" height="150" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="20" width="60" height="70" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+              <circle cx="50" cy="50" r="18" fill="#0f172a" stroke="#00f0ff" stroke-width="2"/>
+              <path d="M42 50 C42 45 58 45 58 50 C58 55 42 55 42 60" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="50" cy="74" r="3" fill="#10b981"/>
+              <rect x="35" y="90" width="6" height="14" fill="#94a3b8"/>
+              <rect x="59" y="90" width="6" height="14" fill="#94a3b8"/>
+            </svg>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Wireless Chime Extender</span>
+            <span class="product-connectivity">● Wi-Fi + 433MHz RF</span>
+          </div>
+          <h3 class="product-name">Nexura ChimeLink</h3>
+          <p class="product-description">
+            Plug-in multi-room doorbell speaker with 32 polyphonic tones, 105 dB adjustable volume, and silent LED ring flash for quiet hours.
+          </p>
+          <div class="product-spec-pills">
+            <span class="spec-pill">32 Chimes</span>
+            <span class="spec-pill">105 dB Volume</span>
+            <span class="spec-pill">Pass-Through AC</span>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-price-box">
+              <span class="price-label">MSRP</span>
+              <span class="price-value">$39.00</span>
+            </div>
+            <button class="btn-card-action open-spec-btn" data-product-id="hub-chimelink">Quick Specs</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       INTERACTIVE ENERGY SAVINGS CALCULATOR
+       ========================================================================= -->
+  <section class="section savings-section" id="calculator">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge-tag">Efficiency Matrix</div>
+        <h2 class="section-title">Calculate Your Smart Savings</h2>
+        <p class="section-subtitle">
+          Intelligent schedules, geo-fenced climate adjustments, and BLDC motor efficiency reduce household electricity bills by up to 35%.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <!-- Interactive Sliders -->
+        <div>
+          <div class="calc-input-group">
+            <div class="calc-label-row">
+              <label for="calc-rooms">Number of Rooms</label>
+              <span id="calc-rooms-val" style="color: var(--accent-cyan); font-weight: 700;">4 Rooms</span>
+            </div>
+            <input type="range" class="range-slider" id="calc-rooms" min="1" max="10" value="4">
+          </div>
+
+          <div class="calc-input-group">
+            <div class="calc-label-row">
+              <label for="calc-devices">Connected Smart Devices</label>
+              <span id="calc-devices-val" style="color: var(--accent-cyan); font-weight: 700;">12 Devices</span>
+            </div>
+            <input type="range" class="range-slider" id="calc-devices" min="2" max="40" value="12">
+          </div>
+
+          <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+            *Estimations based on US Energy Information Administration (EIA) baseline averages for automated HVAC temperature setbacks, BLDC fan energy ratings, and automated LED schedule cutoffs.
+          </div>
+        </div>
+
+        <!-- Calculated Output Card -->
+        <div class="calc-results-card">
+          <div style="text-transform: uppercase; font-size: 0.8rem; font-weight: 700; color: var(--text-muted); letter-spacing: 0.05em;">
+            Estimated Annual Utility Savings
+          </div>
+          <div class="savings-number" id="savings-result-val">$588</div>
+          <div style="font-size: 0.95rem; color: var(--accent-emerald); font-weight: 600;">
+            ✓ Up to 32% Average Electricity Reduction
+          </div>
+
+          <div class="savings-stats-row">
+            <div>
+              <div class="stat-metric" id="savings-kwh-val">3,645 kWh</div>
+              <div class="stat-desc">Energy Saved</div>
+            </div>
+            <div>
+              <div class="stat-metric" id="savings-co2-val">1,530 kg</div>
+              <div class="stat-desc">Carbon Offset</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CORE TECHNOLOGY & OPEN ARCHITECTURE
+       ========================================================================= -->
+  <section class="section" id="architecture">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge-tag">Open Standards</div>
+        <h2 class="section-title">Engineered Without Walled Gardens</h2>
+        <p class="section-subtitle">
+          Unlike legacy smart home brands that lock you into proprietary bridges and paid monthly subscriptions, Nexura appliances run on open, secure, direct-to-router protocols.
+        </p>
+      </div>
+
+      <div class="protocol-grid">
+        <div class="protocol-card">
+          <div class="protocol-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+              <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+              <line x1="12" y1="20" x2="12.01" y2="20"></line>
+            </svg>
+          </div>
+          <h3 class="protocol-title">Direct Wi-Fi 6 & Dual-Band</h3>
+          <p class="protocol-desc">
+            No expensive proprietary gateway. Devices link directly to any standard 2.4 GHz or 5 GHz home Wi-Fi network with ultra-low latency and OFDMA spectrum efficiency.
+          </p>
+        </div>
+
+        <div class="protocol-card">
+          <div class="protocol-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <h3 class="protocol-title">Local-First Network Control</h3>
+          <p class="protocol-desc">
+            Internet outage? Automations and wall-switches continue to function without interruption over your local area network (LAN) using Matter over Wi-Fi.
+          </p>
+        </div>
+
+        <div class="protocol-card">
+          <div class="protocol-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="protocol-title">WPA3 & Zero Cloud Lock</h3>
+          <p class="protocol-desc">
+            End-to-end hardware encryption (AES-128/256), secure boot microcontrollers, and zero mandatory cloud recording fees. Your video feeds and sensor logs belong to you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FREQUENTLY ASKED QUESTIONS (ACCORDION)
+       ========================================================================= -->
+  <section class="section" id="faq" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge-tag">Help Center</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Everything you need to know about setting up and integrating Nexura generic smart appliances.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <!-- Question 1 -->
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Do I need a separate smart hub or bridge?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              No! All Nexura products (smart bells, ceiling fans, AC controllers, and lights) connect directly to your existing home Wi-Fi router. Thanks to native Matter over Wi-Fi support, they communicate effortlessly with Apple Home, Google Home, and Alexa without any intermediary manufacturer hub.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do the products work if my home internet goes down?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes. Nexura hardware operates on a "Local First" architecture. Scheduled fan speeds, lighting triggers, and local AC temperature regulation run entirely on your local Wi-Fi router without requiring a round-trip to cloud servers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are there recurring monthly fees for video doorbell recording?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Never. The HaloBell Pro includes an on-board MicroSD slot supporting up to 256GB and supports open RTSP / ONVIF streaming for Network Attached Storage (NAS). Cloud storage is completely optional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I integrate these products into Home Assistant?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolutely. In addition to Matter, all generic appliances expose a local REST and MQTT interface that automatically auto-discovers in Home Assistant, Homebridge, and openHAB.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What are the electrical and wiring requirements?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              All products support universal AC 100V-240V (50/60Hz). The HaloBell Pro can be powered via existing 16-24V mechanical doorbell wiring or operated wirelessly via its long-lasting rechargeable battery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CONTACT / WHOLESALE & PRE-ORDER INQUIRY
+       ========================================================================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <div class="badge-tag">Get in Touch</div>
+          <h2 style="font-size: 2.5rem; font-weight: 800; line-height: 1.2; margin-bottom: 1rem;">
+            Ready to Automate Your Next Project?
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1.05rem;">
+            Whether you are an architect designing a smart residence, an electrical contractor sourcing Wi-Fi appliances, or a homeowner upgrading your living space—we're here to help.
+          </p>
+
+          <div class="contact-channels">
+            <div class="channel-item">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Direct Email</div>
+                <div style="font-weight: 700;">contact@nexurahome.generic.io</div>
+              </div>
+            </div>
+
+            <div class="channel-item">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Toll-Free Support</div>
+                <div style="font-weight: 700;">1 (800) 555-NEXURA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Alex Morgan" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="alex@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-interest">Primary Interest</label>
+              <select id="contact-interest" class="form-control" required>
+                <option value="residential">Residential Home Automation</option>
+                <option value="builder">Builder / Contractor Bulk Order</option>
+                <option value="developer">IoT Developer / Custom Integration</option>
+                <option value="sample">Order Evaluation Kit</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Project Details</label>
+              <textarea id="contact-message" class="form-control" rows="4" placeholder="Tell us about the home automation setup or quantities you need..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%; border-radius: var(--radius-sm);">
+              Send Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 2L2 10l10 8 10-8-10-8z"/>
+              </svg>
+            </div>
+            <span class="brand-text">NEXURA<span>.IOT</span></span>
+          </div>
+          <p>
+            Pioneering generic, open-standard Wi-Fi home automation devices. Interoperable, bridge-free, and privacy-respecting hardware for modern connected homes.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-heading">Products</div>
+          <ul class="footer-links">
+            <li><a href="#products">HaloBell Pro 2K</a></li>
+            <li><a href="#products">AeroFlow BLDC Fan</a></li>
+            <li><a href="#products">FrostSense Inverter AC</a></li>
+            <li><a href="#products">LuminaGlow RGB+CCT</a></li>
+            <li><a href="#products">BreezeTower Pro</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Ecosystem</div>
+          <ul class="footer-links">
+            <li><a href="#architecture">Matter over Wi-Fi</a></li>
+            <li><a href="#architecture">Apple HomeKit</a></li>
+            <li><a href="#architecture">Google Home</a></li>
+            <li><a href="#architecture">Home Assistant API</a></li>
+            <li><a href="#faq">Local LAN Protocol</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">GitHub Pages Ready</div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+            This website is 100% static, vanilla HTML5, CSS3, and ES6 JS with zero build steps or heavy dependencies. Perfect for instantaneous deployment to GitHub Pages.
+          </p>
+          <div class="gh-deploy-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub Pages Compatible</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Nexura IoT Technologies Inc. All generic & imaginary product concepts.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Open API Terms</a>
+          <a href="#">Documentation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       SPECIFICATIONS MODAL DIALOG
+       ========================================================================= -->
+  <div class="modal-backdrop" id="spec-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 id="modal-title" style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--accent-cyan);">
+        Product Specifications
+      </h3>
+      <div id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notice" id="toast-notice" role="status" aria-live="polite">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--accent-cyan);">
+      <circle cx="12" cy="12" r="10"></circle>
+      <polyline points="12 6 12 12 14 14"></polyline>
+    </svg>
+    <span id="toast-msg">Notice</span>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
