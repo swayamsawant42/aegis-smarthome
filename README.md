@@ -1,5 +1,7 @@
 # AEGIS IoT — Smart Home Automation Web Portal
 
+🌐 **Live Website**: [https://swayamsawant42.github.io/aegis-smarthome/](https://swayamsawant42.github.io/aegis-smarthome/)
+
 A modern, high-performance, responsive corporate showcase and interactive product simulator for **AEGIS IoT**, a technology company specializing in generic, universal, Wi-Fi-enabled smart home appliances (smart bells, whisper-quiet BLDC fans, dual-inverter ACs, and atmospheric tunable lighting).
 
 Designed specifically for **GitHub Pages** deployment with zero build steps, zero external dependencies, and instantaneous load times.
