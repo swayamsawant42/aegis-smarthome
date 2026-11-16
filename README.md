@@ -67,17 +67,34 @@ Then go to **Repository Settings** > **Pages** and enable GitHub Pages on the `m
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure (Razorpay Review Compliant)
 
 ```
 smarthome-website/
-├── index.html          # Semantic HTML5 structure & open-graph metadata
+├── index.html          # Main landing page, interactive simulator & catalog
+├── about.html          # About Us (Company profile & registered details)
+├── contact.html        # Contact Us (Phone, email, address, grievance officer)
+├── pricing.html        # Pricing (Hardware pricing in INR & package bundles)
+├── terms.html          # Terms & Conditions (Merchant terms & jurisdiction)
+├── privacy.html        # Privacy Policy (Data protection & PCI-DSS gateway compliance)
+├── refund-policy.html  # Refunds & Cancellation Policy (7-day returns & shipping terms)
 ├── css/
-│   └── style.css       # Responsive styling, CSS variables, glassmorphism & animations
+│   └── style.css       # Responsive styling, glassmorphism, animations & policies
 ├── js/
-│   └── app.js          # Simulator logic, Web Audio synthesizer, calculators & modal
-└── README.md           # Deployment documentation
+│   └── app.js          # Simulator logic, audio synthesizer & theme controller
+└── README.md           # Documentation & deployment guide
 ```
+
+---
+
+## 🛡️ Razorpay Website Review Compliance Checklist
+- [x] **About Us**: Dedicated page with business details, mission, and product lines ([`about.html`](about.html))
+- [x] **Contact Us**: Official email (`aegisapod@gmail.com`), phone (`+91 7410190640`), physical address, and working hours ([`contact.html`](contact.html))
+- [x] **Pricing**: Transparent pricing in INR (₹) inclusive of GST and itemized pricing table ([`pricing.html`](pricing.html))
+- [x] **Terms and Conditions**: Legally binding merchant terms, order policies, and Pune jurisdiction ([`terms.html`](terms.html))
+- [x] **Privacy Policy**: Comprehensive data protection and Razorpay payment security statement ([`privacy.html`](privacy.html))
+- [x] **Refunds & Cancellation Policy**: 7-day return policy, pre-dispatch cancellation, and 5–7 day refund turnaround to original payment method ([`refund-policy.html`](refund-policy.html))
+- [x] **Public Accessibility**: Entire site accessible without login or authentication barriers
 
 ---
 
