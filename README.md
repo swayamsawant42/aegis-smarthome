@@ -1,6 +1,6 @@
-# Nexura IoT — Smart Home Automation Web Portal
+# AEGIS IoT — Smart Home Automation Web Portal
 
-A modern, high-performance, responsive corporate showcase and interactive product simulator for **Nexura IoT**, a technology company specializing in generic, universal, Wi-Fi-enabled smart home appliances (smart bells, whisper-quiet BLDC fans, dual-inverter ACs, and atmospheric tunable lighting).
+A modern, high-performance, responsive corporate showcase and interactive product simulator for **AEGIS IoT**, a technology company specializing in generic, universal, Wi-Fi-enabled smart home appliances (smart bells, whisper-quiet BLDC fans, dual-inverter ACs, and atmospheric tunable lighting).
 
 Designed specifically for **GitHub Pages** deployment with zero build steps, zero external dependencies, and instantaneous load times.
 
@@ -29,7 +29,7 @@ Designed specifically for **GitHub Pages** deployment with zero build steps, zer
 ## 🚀 How to Publish to GitHub Pages
 
 ### Method 1: Via GitHub Web Interface (Easiest)
-1. Create a new repository on [GitHub](https://github.com/new) (e.g. `nexura-smarthome` or `<your-username>.github.io`).
+1. Create a new repository on [GitHub](https://github.com/new) (e.g. `aegis-smarthome` or `<your-username>.github.io`).
 2. Upload the files (`index.html`, `css/style.css`, `js/app.js`, and `README.md`) to the repository.
 3. In your GitHub repository, click on **Settings** > **Pages** (under the "Code and automation" section in the left sidebar).
 4. Under **Build and deployment** > **Source**, choose **Deploy from a branch**.
@@ -50,7 +50,7 @@ git init
 
 # 2. Add all files and make initial commit
 git add .
-git commit -m "Initial commit: Nexura Smart Home website"
+git commit -m "Initial commit: AEGIS Smart Home website"
 
 # 3. Rename branch to main
 git branch -M main

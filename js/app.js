@@ -1,5 +1,5 @@
 /**
- * NEXURA SMART HOME - APPLICATION JAVASCRIPT
+ * AEGIS SMART HOME - APPLICATION JAVASCRIPT
  * Interactive Simulator, Product Catalog, Energy Calculator, Audio Synthesis & Theme Controller
  */
 
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggleBtn = document.getElementById('theme-toggle-btn');
   const themeIcon = document.getElementById('theme-icon');
   
-  const savedTheme = localStorage.getItem('nexura-theme') || 
+  const savedTheme = localStorage.getItem('aegis-theme') || 
     (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
   
   document.documentElement.setAttribute('data-theme', savedTheme);
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const currentTheme = document.documentElement.getAttribute('data-theme');
       const newTheme = currentTheme === 'light' ? 'dark' : 'light';
       document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('nexura-theme', newTheme);
+      localStorage.setItem('aegis-theme', newTheme);
       updateThemeIcon(newTheme);
     });
   }
@@ -431,7 +431,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const productSpecsDB = {
     'bell-pro': {
-      title: 'Nexura Bell Pro 2K - Wi-Fi Video Doorbell',
+      title: 'Aegis Bell Pro 2K - Wi-Fi Video Doorbell',
       specs: [
         ['Resolution', '2K QHD (2560 × 1440) HDR with 160° Ultra-Wide Field of View'],
         ['Connectivity', 'Dual-Band Wi-Fi 6 (2.4 GHz & 5 GHz) + Bluetooth 5.2 LE'],
@@ -444,7 +444,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     'fan-aeroflow': {
-      title: 'Nexura AeroFlow Ultra - Smart BLDC Ceiling Fan',
+      title: 'Aegis AeroFlow Ultra - Smart BLDC Ceiling Fan',
       specs: [
         ['Motor Type', 'WhisperQuiet™ 100% Copper Brushless DC (BLDC) Motor (<22 dB)'],
         ['Airflow Speed', '10 Precision Digital Speeds + Nature Breeze Simulation'],
@@ -457,7 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     'ac-frostsense': {
-      title: 'Nexura FrostSense Inverter - Smart AC & Thermostat Hub',
+      title: 'Aegis FrostSense Inverter - Smart AC & Thermostat Hub',
       specs: [
         ['Cooling Tech', 'Twin-Rotary Dual Inverter Compressor with Eco-Sense Algorithms'],
         ['Connectivity', 'Wi-Fi 6 (2.4/5GHz) + Thread & Matter support'],
@@ -470,7 +470,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     'light-lumina': {
-      title: 'Nexura LuminaGlow - Tunable RGB+CCT Smart Mesh Light',
+      title: 'Aegis LuminaGlow - Tunable RGB+CCT Smart Mesh Light',
       specs: [
         ['Luminous Flux', '1200 Lumens peak brightness (equivalent to 85W traditional)'],
         ['Color Gamut', '16 Million RGB colors + 2200K - 6500K tunable dynamic whites'],
@@ -483,7 +483,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     'fan-tower': {
-      title: 'Nexura BreezeTower Pro - Smart Bladeless Tower Fan',
+      title: 'Aegis BreezeTower Pro - Smart Bladeless Tower Fan',
       specs: [
         ['Oscillation', '120° Wide-Angle motorized smooth oscillation'],
         ['Air Filtration', 'True HEPA H13 Filter (captures 99.97% of 0.3μm particulates)'],
@@ -494,14 +494,14 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     'hub-chimelink': {
-      title: 'Nexura ChimeLink Hub - Multi-Room Wi-Fi Chime & Extender',
+      title: 'Aegis ChimeLink Hub - Multi-Room Wi-Fi Chime & Extender',
       specs: [
         ['Tones', '32 High-fidelity polyphonic and spatial digital ringtones'],
         ['Sound Output', 'Adjustable 4-level volume up to 105 dB with LED flash'],
         ['Connectivity', 'Wi-Fi 2.4 GHz + 433 MHz long-range proprietary RF link'],
-        ['Range', 'Up to 300 meters open field range to Nexura Bell Pro'],
+        ['Range', 'Up to 300 meters open field range to Aegis Bell Pro'],
         ['Design', 'Compact wall plug-in pass-through AC outlet design'],
-        ['Multi-Pairing', 'Supports pairing with up to 10 Nexura sensors and bells']
+        ['Multi-Pairing', 'Supports pairing with up to 10 Aegis sensors and bells']
       ]
     }
   };
